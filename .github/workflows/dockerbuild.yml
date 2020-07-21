@@ -2,9 +2,12 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, develop ]
 #   pull_request:
 #     branches: [ master ]
+#   release:
+#     # Only use the types keyword to narrow down the activity types that will trigger your workflow.
+#     types: [published, created, edited]
 
 jobs:
   build:
